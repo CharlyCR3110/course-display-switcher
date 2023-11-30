@@ -1,34 +1,50 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
+import CourseList from './components/CourseList'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App () {
+  const courses = [
+    {
+      id: 1,
+      image: 'https://www.open.edu/openlearn/pluginfile.php/3277384/tool_ocwmanage/articletext/0/become_a_student_inline.jpg',
+      name: 'REACT COURSE',
+      area: 'Web Development',
+      percentage: 0
+    },
+    {
+      id: 2,
+      image: 'https://www.open.edu/openlearn/pluginfile.php/3277384/tool_ocwmanage/articletext/0/become_a_student_inline.jpg',
+      name: 'LINEAR ALGEBRA',
+      area: 'Mathematics',
+      percentage: 81
+    },
+    {
+      id: 3,
+      image: 'https://www.open.edu/openlearn/pluginfile.php/3277384/tool_ocwmanage/articletext/0/become_a_student_inline.jpg',
+      name: 'PYTHON COURSE',
+      area: 'Programming',
+      percentage: 21
+    },
+    {
+      id: 4,
+      image: 'https://www.open.edu/openlearn/pluginfile.php/3277384/tool_ocwmanage/articletext/0/become_a_student_inline.jpg',
+      name: 'DATA SCIENCE',
+      area: 'Data Analysis',
+      percentage: 40
+    },
+    {
+      id: 5,
+      image: 'https://www.open.edu/openlearn/pluginfile.php/3277384/tool_ocwmanage/articletext/0/become_a_student_inline.jpg',
+      name: 'DATA STRUCTURES',
+      area: 'Programming',
+      percentage: 100
+    }
+  ]
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <section className='courses'>
+      <CourseList courses={courses} />
+    </section>
   )
 }
 
