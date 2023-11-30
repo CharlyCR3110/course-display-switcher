@@ -33,3 +33,18 @@
     width: 100%;
   }
 }
+
+.list {
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  width: calc(80% - 40px);
+  margin: 20px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
