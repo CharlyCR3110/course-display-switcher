@@ -1,0 +1,60 @@
+/* General list styles */
+.list {
+    width: 18rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* list image styling */
+  .list-image {
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: #000;
+  }
+  
+  /* list title styling */
+  .list-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+  }
+  
+  
+  .list-area {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+  }
+  
+  .list-area.web-development {
+    color: #61dafb;
+  }
+  
+  .list-area.mathematics {
+    color: #ff7f50;
+  }
+  
+  .list-area.programming {
+    color: #32cd32;
+  }
+  
+  .list-area.data-analysis {
+    color: #9370db;
+  }
+  
+  /* list progress bar container styling */
+  .list-progress-bar {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #000;
+    margin: 1rem;
+  }
+  
+  /* list progress bar styling */
+  .list-progress {
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #00ff00;
+  }
