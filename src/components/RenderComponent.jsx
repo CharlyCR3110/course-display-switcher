@@ -1,6 +1,5 @@
 import CourseCard from './courseCard'
-import CourseListRow from './CourseListRow'
-import CourseSummary from './CourseSummary'
+import CourseListItem from './CourseListItem'
 
 const RenderComponent = ({ courseImage, courseName, courseArea, percentageCompleted, displayStyle }) => {
   switch (displayStyle) {
@@ -14,9 +13,7 @@ const RenderComponent = ({ courseImage, courseName, courseArea, percentageComple
         />
       )
     case 'lists':
-      return (<h1>Working on</h1>)
-    case 'summary':
-      return (<h1>Working on</h1>)
+      return <CourseListItem courseImage={courseImage} courseName={courseName} courseArea={courseArea} percentageCompleted={percentageCompleted} />
     default:
       return (<h1>DEFAULT</h1>)
   }
