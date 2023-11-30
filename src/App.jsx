@@ -41,7 +41,7 @@ const courses = [
 ]
 
 function App () {
-  const [displayMode, setDisplayMode] = useState('Card')
+  const [displayMode, setDisplayMode] = useState('cards')
   const [showDropdown, setShowDropdown] = useState(false)
 
   const handleDisplayChange = (mode) => {
@@ -56,11 +56,12 @@ function App () {
       <div className='dropdown'>
         <button className={dropbtnClassName} onClick={() => setShowDropdown(!showDropdown)}>Display Mode</button>
         <div className={dropdownContentClassName}>
-          <button onClick={() => handleDisplayChange('Card')}>Card</button>
-          <button onClick={() => handleDisplayChange('List')}>List</button>
+          <button onClick={() => handleDisplayChange('cards')}>Card</button>
+          <button onClick={() => handleDisplayChange('lists')}>List</button>
+          <button onClick={() => handleDisplayChange('summary')}>Summary</button>
         </div>
       </div>
-      <CourseList courses={courses} displayMode={displayMode} />
+      <CourseList courses={courses} displayStyle={displayMode} />
     </section>
   )
 }
