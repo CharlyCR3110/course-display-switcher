@@ -10,7 +10,7 @@ const CourseCard = ({ courseImage, courseName, courseArea, percentageCompleted }
     <section className='card'>
       <img src={courseImage} alt='Course' className='card-image' />
       <h3 className='card-name'>{courseName}</h3>
-      <small className='card-area'>{courseArea}</small>
+      <small className={`card-area ${courseArea.toLowerCase().replace(' ', '-')}`}>{courseArea}</small>
       <div className='card-progress-bar'>
         <div className='card-progress' style={progressStyles} />
       </div>
