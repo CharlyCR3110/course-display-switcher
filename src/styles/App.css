@@ -53,3 +53,36 @@
   border-radius: 0.5em;
   padding: 1em;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  padding: 1em;
+  min-width: 10em;
+  z-index: 1;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropbtn:hover {
+  background-color: #ccc;
+}
