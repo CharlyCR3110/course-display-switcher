@@ -56,8 +56,8 @@ function App () {
       <div className='dropdown'>
         <button className={dropbtnClassName} onClick={() => setShowDropdown(!showDropdown)}>Display Mode</button>
         <div className={dropdownContentClassName}>
-          <button onClick={() => handleDisplayChange('cards')}>Card</button>
-          <button onClick={() => handleDisplayChange('lists')}>List</button>
+          <button onClick={() => handleDisplayChange('cards')} className='dropdown-item'>Card</button>
+          <button onClick={() => handleDisplayChange('lists')} className='dropdown-item'>List</button>
         </div>
       </div>
       <CourseList courses={courses} displayStyle={displayMode} />
