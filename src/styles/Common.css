@@ -1,0 +1,54 @@
+/* Common styles for both card and list */
+.common-style {
+  width: 18rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Common image styling */
+.common-image {
+  height: 10rem;
+  border-radius: 1rem;
+  background-color: #000;
+}
+
+/* Common area styling */
+.common-area {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+/* Common progress bar container styling */
+.common-progress-bar {
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #000;
+  margin: 1rem;
+}
+
+/* Common progress bar styling */
+.common-progress {
+  height: 100%;
+  border-radius: 0.5rem;
+  background-color: #00ff00;
+}
+
+
+.web-development {
+  color: #61dafb;
+}
+
+.mathematics {
+  color: #ff7f50;
+}
+
+.programming {
+  color: #32cd32;
+}
+
+.data-analysis {
+  color: #9370db;
+}
